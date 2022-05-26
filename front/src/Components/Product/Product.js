@@ -15,7 +15,7 @@ const Product = (props) => {
             <h5>Price: {price}</h5>
             <p><small>By: {seller}</small></p>
             <p>Only: {stock} left! Order Soon :) </p>
-            <button className='btn btn-warning'>Buy</button>
+            <button className='btn btn-warning'>Add To Cart</button>
             <hr  className='text-green'/>
             </div>
         </div>
