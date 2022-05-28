@@ -7,7 +7,6 @@ const Product = (props) => {
         <div className='d-flex'>
             <div>
             <img src={img} alt="" />
-
             </div>
             <div>
 
@@ -15,7 +14,7 @@ const Product = (props) => {
             <h5>Price: {price} USD</h5>
             <p><small>By: {seller}</small></p>
             <p>Only: {stock} left! Order Soon :) </p>
-            <button className='btn btn-warning'>Add To Cart</button>
+            <button onClick={ ()=>props.handleAddToCart(props.product)}  className='btn btn-warning'>Add To Cart</button>
             <hr  className='text-green'/>
             </div>
         </div>
