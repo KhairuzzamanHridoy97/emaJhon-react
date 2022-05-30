@@ -12,14 +12,14 @@ const Cart = (props) => {
     const shipping = 0;
     const tax = (total+shipping)/100;
     const grandTotal = total+shipping+tax;
-
-
+    
     return (
         <div>
              <h3>Order Summary</h3>
                 <h5>Items Ordered: {props.cart.length} </h5>
                <p>Total: {total}</p> 
                <p>Tax: {tax}</p>
+               <p>Grand Total:</p>
         </div>
     );
 };
