@@ -13,7 +13,7 @@ const Product = (props) => {
                  <img src={img} alt="" />
             </div> 
             <div>
-            <h3 className='text-primary'>This is {name}</h3>
+            <h3 className='text-primary'>{name}</h3>
             <h5>Price: {price} USD</h5>
             <p><small>By: {seller}</small></p>
             <p>Only: {stock} left! Order Soon :) </p>
