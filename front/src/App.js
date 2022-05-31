@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import OrderReview from './Components/OrderReview/OrderReview';
 import Inventory from './Components/Inventory/Inventory';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
          <Route path={'/inventory'}>
             <Inventory></Inventory>
          </Route>
-         
+         <Route path="*">
+            <NotFound></NotFound>
+         </Route>
        </Switch>
      </Router>
     </div>
