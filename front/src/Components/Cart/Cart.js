@@ -10,7 +10,7 @@ const Cart = (props) => {
     if(!product.quantity){
         product.quantity=1;
     }
-        total = total + product.price* product.quantity;
+        total = total + product.price * product.quantity;
         totalQuantity =  totalQuantity+ product.quantity;
     };
 
